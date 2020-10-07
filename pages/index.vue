@@ -7,7 +7,7 @@
     </v-col>
   </v-row>
   <!-- absolute -->
-  <v-img class="logo independent" width="200" height="200" src="@/static/M.png" />
+  <v-img class="logo independent" width="200" height="200" src="@/M.png" />
   <div class="independent round_round_wrap">
     <span class="round_round"></span>
   </div>
