@@ -33,7 +33,8 @@ export default {
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    '@nuxtjs/style-resources'
   ],
   axios: {
     baseURL: 'http://localhost:8000',
@@ -41,10 +42,11 @@ export default {
     credentials: false,
     mode: 'no-cors'
   },
+  styleResources: { scss: [ '~/assets/scss/index.scss' ] },
 
   // Vuetify module configuration (https://go.nuxtjs.dev/config-vuetify)
   vuetify: {
-    customVariables: ['~/assets/variables.scss']
+    customVariables: ['~/assets/vuetify_customize.scss']
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
