@@ -11,8 +11,13 @@
 <script>
 export default {
   data() {
-    return {
-    }
+    return {}
   }
 }
 </script>
+
+<style>
+.v-application {
+  background: rgb(25, 25, 40) !important;
+}
+</style>
