@@ -9,7 +9,7 @@
       @content; // 후에 선언하게될 keyframe 에서 { } 안에 있는 속성을 그대로 전달받는다
   }
 }
-@include keyframe (wave) {
+@include keyframe ( wave ) {
   100% {
     transform: scale(0);
     opacity: 1;
@@ -19,7 +19,12 @@
   }
 }
 
-// div {
-//   @include animation (0s, 4s, move);
-// }
+@include keyframe ( appear ) {
+  0% {
+    opacity: 0%; 
+  }
 
+  100% {
+    opacity: 100%;
+  }
+}
