@@ -9,21 +9,21 @@
   -->
   <v-row class="mb-12">
     <v-col cols="3">
-      <v-card class="collection left round_round_wrap">
+      <v-card class="collection_card left">
         <div>
           AI
         </div>
       </v-card>
     </v-col>
     <v-col cols="3">
-      <v-card class="collection center">
+      <v-card class="collection_card center">
         <div>
           TECH
         </div>
       </v-card>
     </v-col>
     <v-col cols="3">
-      <v-card class="collection right">
+      <v-card class="collection_card right">
         <div>
           MIX
         </div>
@@ -60,6 +60,18 @@ export default {
 .logo {
   animation: up 2s linear;
   animation-iteration-count: 1;
+}
+
+.collection_card {
+  width: 10vw;
+  height: 10vh;
+  text-align: center;
+
+  div {
+    padding-top: 20%;
+    font-weight: 700;
+    ;
+  }
 }
 
 @keyframes up {
