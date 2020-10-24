@@ -1,0 +1,25 @@
+// @mixin animation ($delay, $duration, $name) {
+//   animation-delay: $delay;
+//   animation-duration: $duration;
+//   animation-name: $name
+// }
+
+@mixin keyframe ($animation_name) {
+  @keyframes #{$animation_name} { // 변수를 그대로 받아서 문자열로 변환
+      @content; // 후에 선언하게될 keyframe 에서 { } 안에 있는 속성을 그대로 전달받는다
+  }
+}
+@include keyframe (wave) {
+  100% {
+    transform: scale(0);
+    opacity: 1;
+  }0%{
+    transform: scale(3.5);
+    opacity: 0;
+  }
+}
+
+// div {
+//   @include animation (0s, 4s, move);
+// }
+

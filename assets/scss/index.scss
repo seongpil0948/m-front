@@ -1,1 +1,62 @@
 @import "~/assets/scss/collection.scss";
+@import "~/assets/scss/animations.scss";
+
+
+.row {
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  animation: up 2s linear;
+  animation-iteration-count: infinite;
+}
+
+.collection_card {
+  width: 10vw;
+  height: 10vh;
+  text-align: center;
+
+  div {
+    padding-top: 20%;
+    font-weight: 700;
+    ;
+  }
+}
+
+@keyframes up {
+  0% {
+    opacity: 0%;
+    transform: translateY(100%);
+  }
+
+  100% {
+    opacity: 100%;
+    transform: translateY(0%);
+  }
+}
+
+
+.m_circle {
+  width: 25px;
+  height: 25px;
+  left: 50%;
+  top: 50%;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  animation: wave 1s infinite linear;
+  position: absolute;
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    background: white;
+    margin-left: -12px;
+    margin-top: -12px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    animation: wave 3s infinite linear;
+  }
+}
